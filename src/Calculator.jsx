@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Divide, X, Minus, Plus, Equal, RotateCcw } from 'lucide-react';
+import { Divide, X, Minus, Plus, Equal } from 'lucide-react';
 
 export const Calculator = () => {
   const [display, setDisplay] = useState('0');

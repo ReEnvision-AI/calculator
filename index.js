@@ -1,1 +1,3 @@
-export { Calculator } from './src/Calculator.jsx'
+import { Calculator } from './src/Calculator'
+
+export default Calculator;
