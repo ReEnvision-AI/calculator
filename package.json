@@ -17,7 +17,7 @@
     "vite": "^4.3.9"
   },
   "exports": {
-    ".": "./src/index.js",
+    ".": "./index.js",
     "./manifest": "./src/manifest/index.js"
 
   }
