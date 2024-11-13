@@ -1,3 +1,3 @@
-import { Calculator } from './src/Calculator'
+import Calculator from './src/Calculator'
 
 export default Calculator;
