@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import './App.css';
 
-const Calculator = () => {
+const App = () => {
   const [display, setDisplay] = useState('');
   const [history, setHistory] = useState('');
   const [currentExpression, setCurrentExpression] = useState('');
@@ -109,78 +110,8 @@ const Calculator = () => {
         <button onClick={() => appendToDisplay('Math.E')}>e</button>
         <button onClick={factorial}>n!</button>
       </div>
-      <style jsx>{`
-        body, html {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          font-family: Arial, sans-serif;
-        }
-
-        #root {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: #f0f0f0;
-        }
-
-        .calculator {
-          background-color: #fff;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          padding: 20px;
-          width: 100%;
-          height: 100%;
-          max-width: 500px;
-          max-height: 800px;
-          display: flex;
-          flex-direction: column;
-        }
-
-        textarea {
-          flex-grow: 1;
-          width: 100%;
-          font-size: 18px;
-          text-align: right;
-          margin-bottom: 10px;
-          padding: 10px;
-          box-sizing: border-box;
-          resize: none;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-        }
-
-        .buttons {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 10px;
-        }
-
-        button {
-          padding: 15px;
-          font-size: 18px;
-          border: none;
-          background-color: #f0f0f0;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          border-radius: 5px;
-        }
-
-        button:hover {
-          background-color: #e0e0e0;
-        }
-
-        @media (max-width: 500px) {
-          .calculator {
-            border-radius: 0;
-            max-width: none;
-            max-height: none;
-          }
-        }
-      `}</style>
     </div>
   );
 };
 
-export default Calculator;
+export default App;
